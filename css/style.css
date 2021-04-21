@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background-color: lightskyblue;
+}
+
+header {
+  background-color: lightblue;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0 0.75rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn {
+  margin-left: auto;
+}
+
+ul, 
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  
+  margin-top: 1rem;
+}
+
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  padding: 0 0.5rem;
+  font-size: 20px;
+}
+
+a:hover,
+a:active {
+  background-color: white;
+}
+
+li {
+  text-align: center;
+  line-height: 30px;
+  margin: auto 0;
+}
+
+nav {
+  display: none;
+}
+.list-view {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+  width: 100%;
+
+}
+
+.flex-nav {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* special class to show the nav - this does not get added to the markup, JS will do that for us */
+.show-nav {
+  display: block;
+  width: 300px;
+  height: 100vh;
+  background-color: lightseagreen;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 600px){
+  .nav-btn { display: block; }  
+}
+
+@media screen and (min-width: 600px){
+  .nav-btn { display: none; }  
+}
+
+@media screen and (max-width: 600px){
+  .list-view { display: none; }  
+}
+
+@media screen and (min-width: 600px){
+  .list-veiw { display: flex; }  
+}
